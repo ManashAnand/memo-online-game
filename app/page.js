@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { socket } from "../socket";
 
+import Coinflip from '@/components/custom/Coinflip'
 export default function Home() {
   const [isConnected, setIsConnected] = useState(false);
   const [transport, setTransport] = useState("N/A");
@@ -35,10 +36,16 @@ export default function Home() {
     };
   }, []);
 
+  const handleEmit = () => {
+    console.log("workking")
+    socket.emit("event","manash")
+  }
   return (
     <div>
       <p>Status: { isConnected ? "connected" : "disconnected" }</p>
       <p>Transport: { transport }</p>
+      <button onClick={() => handleEmit()}>Emit my event</button>
+      <Coinflip/>
     </div>
   );
 }
