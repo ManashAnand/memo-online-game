@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { socket } from "../socket";
 
 import MemoryGame from "@/components/custom/MemoryGame";
+import PlayersInfo from "@/components/custom/PlayersInfo";
 export default function Home() {
   const [isConnected, setIsConnected] = useState(false);
   const [transport, setTransport] = useState("N/A");
@@ -40,6 +41,7 @@ export default function Home() {
     <div>
       <p>Status: { isConnected ? "connected" : "disconnected" }</p>
       <p>Transport: { transport }</p>
+      <PlayersInfo/>
       <MemoryGame/>
     </div>
   );
