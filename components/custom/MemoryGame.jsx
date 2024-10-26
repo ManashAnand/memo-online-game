@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { socket } from '@/socket'
 
 const MemoryGame = () => {
-    const [gridSize, setGridSize] = useState(4);
+    const [gridSize, setGridSize] = useState(0);
     const [cards, setCards] = useState([]);
 
     const [flipped, setFlipped] = useState([]);
