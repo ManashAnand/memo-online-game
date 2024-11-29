@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Memo Online Game
 
-## Getting Started
+**Memo Online Game** is a real-time multiplayer game built using **WebSocket** and **Next.js**. This engaging game allows players to compete while tracking their scores in real-time. It ensures fair play by only allowing an even number of players to participate.
 
-First, run the development server:
+---
 
+## ✨ Features
+
+- **Real-Time Score Updates**: Tracks and displays player scores in real-time using WebSocket.
+- **Even Players Only**: Ensures fairness by allowing only an even number of players to join.
+- **Responsive Design**: Fully responsive and optimized for various devices.
+- **WebSocket Integration**: Powered by WebSocket for seamless real-time communication.
+- **Live Demo Video**: [Watch it in action](https://x.com/manashanand2/status/1849995265324806457).
+
+---
+
+## 🚀 Installation
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or Yarn
+
+### Steps to Install
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/ManashAnand/memo-online-game.git
+   cd memo-online-game
+   ```
+
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the Development Server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Build the Project**:
+   ```bash
+   npm run build
+   ```
+
+5. **Start the Production Server**:
+   ```bash
+   npm start
+   ```
+
+---
+
+## 🛠️ Development
+
+### Running in Development Mode
+To test changes locally, use the following command:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This starts a local development server and watches for file changes.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+```plaintext
+Memo Online Game/
+├── app/                    # Added points logic (last month)
+├── components/             # Zero initialized (last month)
+├── lib/                    # Learn concept using coin (last month)
+├── public/                 # Initial commit from Create Next App (last month)
+├── .dockerignore           # Added Dockerfile (last month)
+├── .eslintrc.json          # Initial commit from Create Next App (last month)
+├── .gitignore              # Initial commit from Create Next App (last month)
+├── Dockerfile              # Added Dockerfile (last month)
+├── README.md               # Initial commit from Create Next App (last month)
+├── components.json         # Learn concept using coin (last month)
+├── jsconfig.json           # Initial commit from Create Next App (last month)
+├── next.config.mjs         # Initial commit from Create Next App (last month)
+├── package-lock.json       # Learn concept using coin (last month)
+├── package.json            # Learn concept using coin (last month)
+├── postcss.config.mjs      # Initial commit from Create Next App (last month)
+├── server.js               # Added points logic (last month)
+├── socket.js               # First commit (last month)
+└── tailwind.config.js      # Learn concept using coin (last month)
 
-To learn more about Next.js, take a look at the following resources:
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🤝 Contributing
 
-## Deploy on Vercel
+Contributions are welcome! Here's how you can contribute:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add your feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/your-feature
+   ```
+5. Create a Pull Request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 📞 Support
+
+If you encounter any issues or have questions, feel free to open an [issue](https://github.com/ManashAnand/memo-online-game/issues) or reach out.
+
+---
+
+## 🌟 Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+- Real-time communication powered by [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
